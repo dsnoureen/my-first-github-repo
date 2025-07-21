@@ -10,3 +10,16 @@ nav li{
 nav ul li:hover{
     background-color: #c4c445;
 }
+form div{
+    margin: 10px;
+    padding: 10px;
+}
+form fieldset{
+    border: 15px solid rebeccapurple;
+}
+form button:hover{
+    background-color: chartreuse;
+}
+table{
+    margin: 20px;
+}

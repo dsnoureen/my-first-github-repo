@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travelling Blog</title>
+    <style>
+        
+        table{
+            border-collapse: separate;
+        }
+        td{
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid;
+            text-align: justify;
+             font-style: italic;
+        }
+        thead{
+            background-color: burlywood;
+        }
+    </style>
+
     <link rel="icon" href="Images/beach.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/blogs.css">
 </head>
@@ -13,15 +30,96 @@
     <header>
         <nav>
             <ul>
-             <li><a href="">Home</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">About Us</a></li>
-        </ul>  
+                <li><a href="">Home</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main> 
+    <main>
+        <form>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="" id="email" placeholder="abc@gmail.com">
+            </div>
 
+            <div>
+                <label for="password">Password :</label>
+                <input type="password" name="" id="password" placeholder="********">
+            </div>
+
+            <fieldset>
+                <legend>Other Info </legend>
+                <label for="search">Search </label>
+                <input type="search" name="" id="">
+                <br>
+                <input type="radio" value="" id="button">
+                <label for="button">Male</label>
+                <br>
+                <input type="radio" value="" id="button">
+                <label for="button">Female</label>
+                <br>
+                <h3>Occupation: </h3>
+                <label for="occ">Service Holder</label>
+                <input type="checkbox" name="" id="occ">
+                <br>
+                <label for="ast">Astronaut</label>
+                <input type="checkbox" name="" id="ast">
+                <br>
+                <label for="doc">Doctor</label>
+                <input type="checkbox" name="" id="doc">
+                <br>
+                <label for="eng">Engineer</label>
+                <input type="checkbox" name="" id="eng">
+            </fieldset>
+
+            <div>
+                <label for="date">Submit the form-fillup date: </label>
+                <input type="datetime" name="" id="date">
+            </div>
+            <fieldset>
+                <legend>Extra :</legend>
+                <h3>Write Your Thoughts:</h3>
+                <textarea name="" id="" cols="90" rows="10"></textarea>
+            </fieldset>
+            <button>Submit</button>
+            <input type="reset" value="Clear">
+            <table>
+                <caption style="margin: 20px; font-size: larger;" >Student Book</caption>
+                <thead>
+                 <tr>
+                    <td>Name</td>
+                    <td>Class</td>
+                    <td>Roll</td>
+                 </tr>
+                </thead>
+
+
+                <tbody>
+                    <tr>
+                        <td>Noureen</td>
+                        <td>8</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Mayesha</td>
+                        <td>7</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Raisa</td>
+                        <td>5</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <td colspan="3"> Total Students : 3 </td>
+                </tfoot>
+            </table>
+            
+        </form>
     </main>
 
     <footer>
